@@ -1,3 +1,4 @@
+import java.awt.desktop.SystemSleepListener;
 import java.util.Scanner;
 
 public class Runner {
@@ -16,20 +17,25 @@ public class Runner {
         System.out.println(medianOf3(a, b, c));
     }
 
-    public static int medianOf3(int n1, int n2, int n3){
+    public static int medianOf3(int n1, int n2, int n3) {
         if(n1 < n2){
             if(n2 < n3){
                 return n2;
-            } else{
+            }
+            else{
                 return n3;
             }
 
-        } else{
+        }
+        else{
             if(n1 < n3){
                 return n1;
-            } else{
+            }
+            else{
                 return n3;
             }
         }
+
     }
+
 }

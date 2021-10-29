@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ModifiedQuadratic {
@@ -22,7 +23,8 @@ public class ModifiedQuadratic {
             Double x1 = ((-b + Math.sqrt(((double)(b * b)) - 4 * a * c))/2 * a);
             Double x2 = ((-b - Math.sqrt(((double)(b * b)) - 4 * a * c))/2 * a);
             System.out.println("Roots: " + x1 + ", " + x2);
-        } catch (Exception e) {
+        }
+        catch (InputMismatchException T) {
             System.out.println("Something went Wrong");
         }
     }

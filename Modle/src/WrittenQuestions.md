@@ -1,7 +1,8 @@
 # Book-Problems-Four
 
 # 27
-1. If 2 of the Numbers are the same
+1. If the third number is the smallest number then the wrong value will be returned
+The Corrected Format is in a different file
 
 
 # 28
