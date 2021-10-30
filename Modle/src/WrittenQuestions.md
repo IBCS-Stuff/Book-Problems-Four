@@ -12,3 +12,7 @@ It also needs to give both of the roots
 if B^2 - 4ac is negative, the equation will fail
 
 
+#29
+
+It could fail if 2 or more are not odd
+

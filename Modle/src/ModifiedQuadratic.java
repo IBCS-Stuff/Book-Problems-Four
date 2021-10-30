@@ -1,3 +1,5 @@
+package Modle.src;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,13 +21,19 @@ public class ModifiedQuadratic {
     }
 
     public static void Quadratic(int a, int b, int c){
-        try {
+        
+        if(a == 0){
+            System.out.println("Undefined");
+        }
+        else if(((double)(b * b) - 4 * a * c) < 0){
+            System.out.println("result is an imaginary number");
+        }
+        else{
             Double x1 = ((-b + Math.sqrt(((double)(b * b)) - 4 * a * c))/2 * a);
             Double x2 = ((-b - Math.sqrt(((double)(b * b)) - 4 * a * c))/2 * a);
             System.out.println("Roots: " + x1 + ", " + x2);
-        }
-        catch (InputMismatchException T) {
-            System.out.println("Something went Wrong");
-        }
-    }
+        
+         }
+}
+
 }
